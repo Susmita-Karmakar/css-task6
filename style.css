@@ -1,0 +1,284 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #efefbb;
+	background-size: cover;
+	font-family: 'verdana';
+}
+
+#navbar{
+	background-color: #191654;
+}
+
+#navbar div{
+	display: inline-block;
+}
+#nav1{
+	color: white;
+	padding: 12px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#nav1 h1{
+	display: inline-block;
+	margin-left: 20px;
+	letter-spacing: 3px;
+	text-shadow: 4px 0px #66ff00;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: white;
+}
+
+#list ul{
+	display: inline-block;
+	margin-left: 300px;
+}
+
+#list li{
+	display: inline-block;
+	color: white;
+	margin-left: 40px;
+}
+
+#filter{
+	display: inline-block;
+	background-color: white;
+	float: left;
+	height: 580px;
+	margin-top: 5px;
+	overflow-y: scroll;
+	padding: 20px;
+}
+#filter h2{
+	text-align: center;
+	color: #191654;
+}
+#filter form label{
+	font-size: 16px;
+	color:#F00000;
+}
+
+
+#sub{
+	margin-left: 45px;
+	font-size: 15px;
+	padding: 5px;
+	background-color: grey;
+	color: white;
+}
+form{
+	color:black; 
+}
+
+
+
+#container {
+  width: 50%;
+  height: 550px;
+  display: inline-block;
+  box-shadow: 10px 10px 10px #abbaab;
+  margin-left: 5%;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  position: relative;
+  float: left;
+  animation: fade 1s ease-in forwards;
+}
+#box1{
+	width: 80%;
+	height: 400px;
+	position: absolute;
+	background-color: #fff;
+	animation: slide1 1.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+@keyframes slide1{
+	0% {
+    width: 0%;
+    left: 10%;
+    opacity: 0;
+  }
+  100% {
+    width: 80%;
+    left: 10%;
+    opacity: 1;
+  }
+}
+img{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	left: -40px;
+	top: 20px;
+	animation: fade 9s ease-in-out forwards;
+}
+@keyframes fade{
+	0% {
+    opacity: 0;
+  }
+  25%{
+  	opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+#review{
+	width: 30%;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	animation: review 3.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+@keyframes review{
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+#video{
+	display: flex;
+	text-align: center;
+	position: absolute;
+	bottom: 2px;
+}
+#video i{
+	width: 50px;
+	height: 50px;
+	display: inline;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border: 2px solid red;
+	border-radius: 50%;
+}
+#video p{
+	margin-left: 15px;
+	font-size: 16px;
+}
+#product-details{
+	width: 60%;
+	height: 310px;
+	display: flex;
+	background: #FBF407;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left:230px;
+	top: 20px;
+	animation: slide2 2.5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+@keyframes slide2{
+  0% {
+    width: 00%;
+    left: 230px;
+  }
+  100% {
+    width: 60%;
+    left: 230px;
+  }
+}
+#description{
+	width: 80%
+	height:80%;
+	padding: 5px;
+	padding-left: 20px;
+	justify-content: space-between;
+	position: relative;
+	flex-direction: column;
+	animation: fade 10s ease-in-out forwards;
+}
+
+#view-more{
+	font-weight: 800;
+	cursor: pointer;
+}
+#buttons{
+	width: 60%;
+	height: 60px;
+	position: absolute;
+	left:230px;
+	bottom: 0px;
+	animation: btn-anim 3s ease-in-out forwards;
+}
+#wishlist{
+	background:#66ff00;
+	border-color: #66ff00;
+	width: 45%;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	
+}
+@keyframes btn-anim{
+	0%{
+		opacity: 0;
+		bottom: -5px;
+	}
+	90%{
+		opacity:0;
+		bottom:-2px;
+	}
+	100%{
+		opacity:1;
+		bottom:0px;
+	}
+}
+
+
+#buy{
+	background:#f80759;
+	border-color: #f80759;
+	width: 45%;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin-left: 25px;
+	cursor: pointer;
+	
+}
+
+#youtube{
+	display: inline-block;
+	position: absolute;
+	padding: 15px;
+	width: 30%;
+	background-color:#FF0000;
+	margin-top: 10px;
+	right: 30px;
+	color: white;
+	font-weight: 400;
+	font-size: 15px;
+	bottom:3px;
+	text-align: center;
+	animation: youtube 3s ease-in-out forwards;
+}
+@keyframes youtube{
+	0%{
+		opacity: 0;
+		bottom: -25px;
+	}
+	100%{
+		opacity: 1;
+		bottom:0px;
+	}
+}
